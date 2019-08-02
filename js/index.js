@@ -21,7 +21,7 @@ function displayRepositories() {
         '" onclick="getCommits(this)">Get Commits</a></li>' +
         r.name +
         '" onclick="getBranches(this)">Get Branches</a></li>'
-        
+
     )
     .join('')}</ul>`;
   document.getElementById('repositories').innerHTML = repoList;
