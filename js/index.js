@@ -12,7 +12,7 @@ function displayRepositories() {
   var repos = JSON.parse(this.responseText);
   console.log(repos);
   const repoList = `<ul>${repos
-    ..map(repo => {
+    .map(repo => {
         const dataUsername = 'data-username="' + repo.owner.login + '"';
         const dataRepoName = 'data-repository="' + repo.name + '"';
         return `
